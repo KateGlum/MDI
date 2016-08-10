@@ -14,10 +14,10 @@ class ThSerial ( ParseMixin.Parse ):
 
         self.flag_autocal   = False
         self.Count_autocal  = 0
-        self.markerLength   = 8  # Длина маркера в байтах
-        self.in_data        = []  # Первичный входной буффер
-        self.out_data       = []  # Первичный выходной буффер
-        self.dataFromECU    = []  # Блок данных для парсинга, полученных из ECU
+        self.markerLength   = 8  # marker length in bytes
+        self.in_data        = []  # Primary input buffer
+        self.out_data       = []  # Primary output buffer
+        self.dataFromECU    = []  # The data block for parsing received from ECU
 
         # Словарь Маркера-ключи, показывающие различные состояния ECU и функции которые эти состояния обрабатывают
 
